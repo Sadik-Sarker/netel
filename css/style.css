@@ -1,0 +1,175 @@
+body,
+a,
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #101010;
+}
+/* header section start */
+.navbar {
+  /* background-color: #101010 !important; */
+}
+.custom-container {
+  background-color: #1c1c1c;
+  position: relative;
+  top: 20px;
+  border-left: 5px solid #d54ab6;
+  border-color: #d54ab6;
+}
+.navbar-light .navbar-nav .nav-link {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: rgb(255 255 255);
+  transition: all linear o.5s;
+  position: relative;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #d54ab6 !important;
+}
+.navbar-light .navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #d54ab6;
+  left: 0;
+  top: 80%;
+  visibility: hidden;
+  transition: all linear 0.5s;
+}
+.navbar-light .navbar-nav .nav-link:hover::before {
+  width: 50%;
+  visibility: visible;
+}
+.navbar-light .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #d54ab6;
+  right: 0;
+  top: 80%;
+  visibility: hidden;
+  transition: all linear 0.5s;
+}
+.navbar-light .navbar-nav .nav-link:hover::after {
+  width: 50%;
+  visibility: visible;
+}
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #d54ab6 !important;
+}
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active:hover {
+  color: #d54ab6 !important;
+}
+/* header section end */
+
+/* banner section start */
+.banner {
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+}
+/* banner section end */
+
+/* card section start */
+.card_wrapper {
+  position: relative;
+  top: -20%;
+  border-bottom: 5px solid transparent;
+  border-radius: 5px;
+  transition: all linear 0.5s;
+}
+.card_wrapper:hover {
+  border-bottom: 5px solid white;
+  cursor: pointer;
+  transform: translateY(-20px);
+}
+.icon_wrapper {
+  width: 80px;
+  height: 80px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 90px;
+}
+
+/* card section end */
+/* business section start */
+.custom_color {
+  background-color: #1c1c1c;
+}
+.b_text_wrapper {
+}
+.learn_btn {
+  border: 1px solid white;
+  border-radius: 0 !important;
+  text-transform: uppercase;
+  color: white;
+  transition: all linear 0.3s;
+}
+.learn_btn:hover {
+  background-color: #198754;
+  color: #101010;
+}
+/* business section end */
+
+/* project section start */
+.project img {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all linear 0.2s;
+}
+.project img:hover {
+  opacity: 1;
+}
+/* project section end */
+
+/* newsletter start */
+.newsletter {
+  background-color: #1c1c1c;
+}
+.n_text_wrapper a {
+  word-spacing: 3px;
+}
+.n_text_wrapper p .fb_page {
+  text-decoration: none;
+}
+.list-group-item {
+  background-color: transparent;
+  padding: 0.5rem 0rem;
+  width: 80%;
+}
+.list-group-item:hover {
+  color: #198754 !important;
+}
+.form-floating > .form-control {
+  padding: 1rem 0rem;
+}
+.form-floating > label {
+  padding: 1rem 0.5rem;
+}
+.social_links ul li a {
+  padding: 16px 0 10px;
+  background: #1c1c1c;
+  transition: all linear 0.5s;
+}
+.social_links ul li a:hover {
+  background-color: #198754;
+}
+.social_links ul li a i {
+  color: white;
+}
+/* newsletter end */
+
+.box {
+  min-height: 80px;
+  background-color: red;
+}
